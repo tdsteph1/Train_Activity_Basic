@@ -1,0 +1,80 @@
+.panel-2
+{
+	margin-top: 20px;
+	
+
+
+}
+
+.display-3
+{
+	text-align: center;
+}
+
+.lead
+{
+	text-align: center;
+}
+
+.jumbotron
+{
+	background: url("../images/train.jpg") bottom;				/* Center allows full image to fit virtically */
+	
+
+	/* Allows background image to fit perfectly on Computer screen, Ipad Screen, & Iphone Screen without any white space */
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	color: white;
+}
+
+table
+{
+
+}
+
+#headerRole
+{
+	
+
+
+}
+
+th
+{
+	width: 240px;
+
+}
+
+td
+{
+  	height: 30px;
+  	width: 250px;
+    vertical-align: bottom;
+
+   
+
+}
+
+tr
+{
+	border-bottom: 2px solid #e6e6e6;
+
+}
+
+.card-header
+{
+	background: #1a75ff;
+	color: white;
+}
+
+.btn
+{
+	background: #1a75ff;
+}
+
+#full-member-list
+{
+	float: left;
+}

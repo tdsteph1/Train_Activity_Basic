@@ -21,6 +21,7 @@
     var arrivalTime = 0;
     var minutesAway = 0;
 
+
     //used in our moment.js formula for calculating (arrivalTime) && (minutesAway)
     var remainder = 0;
     

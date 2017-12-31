@@ -1,7 +1,7 @@
   // Initialize Firebase
   var config = 
   {
-        apiKey: "AIzaSyCnCUqCzx7j--3X6_r3ymzQZ6uXo666kc4",
+    apiKey: "AIzaSyCnCUqCzx7j--3X6_r3ymzQZ6uXo666kc4",
     authDomain: "trainactivitybasic.firebaseapp.com",
     databaseURL: "https://trainactivitybasic.firebaseio.com",
     projectId: "trainactivitybasic",
@@ -12,6 +12,8 @@
 
     // Create a variable to reference the database
     var database = firebase.database();
+
+   
 
     //Global variables
     var trainName = "";
@@ -24,6 +26,8 @@
 
     //used in our moment.js formula for calculating (arrivalTime) && (minutesAway)
     var remainder = 0;
+
+    
     
 
     //submit button pressed
@@ -94,3 +98,13 @@
       console.log("Errors Handled" + errorObject.code);
 
     });
+
+
+    //Remove user
+    function remove()
+    {
+
+      //database.child(trainName).remove();
+    }
+
+    remove();

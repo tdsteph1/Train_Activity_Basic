@@ -27,3 +27,29 @@ Starting arrival time is 2:00(14:00) the current time is 3:25(15:25), the train 
 
 ## Firebase Database 2 trains added
 ![Img4](https://github.com/tdsteph1/Train_Activity_Basic/blob/master/assets/images/img4.png)
+
+
+## Mathamatical Formula for calculating (Min Away) && (Arrival Time)
+     //Get inputs from 4 textboxes
+      trainName = $(".box1").val().trim();
+      destination = $(".box2").val().trim();
+      firstTrainTime = $(".box3").val().trim();
+      frequency = $(".box4").val().trim();
+
+      //use moment.js to convert firstTrainTime to a suitable format in order for moment.js to work
+      var convertedFirstTrainTime = moment(firstTrainTime, 'LT');
+
+      //Use moment js to get (total # minutes) since the (firstTrainTime)
+      var minutesSinceFirstTrainTime = moment().diff(convertedFirstTrainTime, 'minutes');
+
+      //Now get remainder of (minutesSinceFirstTrainTime) mod (frequency)
+      remainder = parseInt(minutesSinceFirstTrainTime) % frequency;
+
+      //Calculate the (minutes Away) before next train comes
+      minutesAway = frequency - remainder;
+
+      //Calculate the exact time (HH:MM am/pm) when the train will arrive
+      //This is Saying:       (current Time) + (minutes Away)
+      arrivalTime = moment().add(minutesAway, 'minutes').format('LT');
+      
+                              
